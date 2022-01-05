@@ -1,0 +1,11 @@
+<template>
+    <div class="slds-box">
+        <lightning-input placeholder="first no." label="phela no." onchange={Firstno}></lightning-input>
+        <lightning-input placeholder="Second no." label="dusra no." onchange={Secondno}></lightning-input>
+        <lightning-button label="Add" onclick={Add}></lightning-button>
+        <br/>
+        <template if:true={showResult}>
+            Result: {res}
+        </template>   
+    </div>
+</template>

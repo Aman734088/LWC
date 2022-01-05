@@ -1,0 +1,10 @@
+<template>
+    <div class="slds-box" style="background-color: deeppink;color:dimgray">
+        <div class="slds-grid slds-gutters">
+            <template for:each={contactList} for:item='cont'>
+                <c-my-contact-comp contact-obj={cont} key={cont.id} class="slds-col slds-size 1 of 3"></c-my-contact-comp>
+            </template>
+
+        </div>
+    </div>
+</template>

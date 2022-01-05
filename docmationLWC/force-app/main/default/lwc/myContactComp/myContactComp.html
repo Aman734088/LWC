@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title={contactObj.accountName}>
+        <p class="slds-p-horizontal_small" style="background-color: darkcyan; color:darkorange">
+            fullName: {contactObj.firstName}  {contactObj.lastName}<br/>
+            Contact:{contactObj.contact}<br/>
+            Email:{contactObj.email}<br/>
+        </p>
+        <p slot="footer">View Details</p>
+    </lightning-card>
+</template>
